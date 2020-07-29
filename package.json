@@ -6,15 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev ./src/index.ts",
-    "start": "node ./dist",
+    "start-prod": "NODE_PATH=./dist node ./dist",
     "build": "tsc"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@arranger/admin": "^2.1.1",
-    "@arranger/server": "^2.1.1",
+    "@arranger/server": "^2.2.4",
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-export-default-from": "^7.10.4",
     "@babel/plugin-proposal-object-rest-spread": "^7.10.4",

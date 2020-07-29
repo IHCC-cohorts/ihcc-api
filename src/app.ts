@@ -27,9 +27,11 @@ import { ApolloServer } from "apollo-server-express";
     introspection: true,
   });
 
+  const graphqlPath = `/${ARRANGER_PROJECT_ID}/graphql`;
+  console.log("Graphql endpoint available at: ", graphqlPath);
   apolloServer.applyMiddleware({
     app,
-    path: `${ARRANGER_PROJECT_ID}/graphql`,
+    path: graphqlPath,
   });
 
   app.listen(PORT, () => {
