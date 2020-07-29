@@ -2,31 +2,35 @@ import express from "express";
 import morgan from "morgan";
 
 //@ts-ignore
-import arranger from "@arranger/server";
-//@ts-ignore
-// import adminGraphql from "@arranger/admin/dist";
-
-const PORT = process.env.PORT || 6060;
-const ES_HOST = process.env.ES_HOST || "http://localhost:9200";
+import { PORT, ES_HOSTS, ARRANGER_PROJECT_ID } from "config";
+import { Client } from "@elastic/elasticsearch";
+import getArrangerGqlSchema, { ArrangerGqlContext } from "getArrangerSchema";
+import { ApolloServer } from "apollo-server-express";
 
 (async () => {
+  const esClient = new Client({
+    nodes: ES_HOSTS,
+  });
+
+  const arrangerSchema = await getArrangerGqlSchema(esClient);
+
   const app = express();
   app.use(morgan("combined"));
 
-  // const adminApolloServer = await adminGraphql({
-  //   esHost: ES_HOST,
-  // });
+  const apolloServer = new ApolloServer({
+    // @ts-ignore ApolloServer type is missing this for some reason
+    schema: arrangerSchema,
+    context: ({ req }: { req: Request }): ArrangerGqlContext => ({
+      es: esClient, // for arranger only
+      projectId: ARRANGER_PROJECT_ID, // for arranger only
+    }),
+    introspection: true,
+  });
 
-  // adminApolloServer.applyMiddleware({
-  //   app: app,
-  //   cors: true,
-  //   path: "/admin",
-  // });
-
-  console.log("Initializing Arranger API");
-  const arrangerRouter = await arranger({ enableAdmin: false });
-  console.log("Initialized Arranger API");
-  app.use("/arranger", arrangerRouter);
+  apolloServer.applyMiddleware({
+    app,
+    path: `${ARRANGER_PROJECT_ID}/graphql`,
+  });
 
   app.listen(PORT, () => {
     console.log(`listening on port ${PORT}`);
