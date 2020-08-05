@@ -1,0 +1,612 @@
+{
+  "index": "cohort_centric",
+  "name": "cohort",
+  "timestamp": "2020-05-04T13:07:38.050Z",
+  "active": true,
+  "config": {
+    "aggs-state": {
+      "timestamp": "2020-05-04T13:07:38.394Z",
+      "state": [
+        {
+          "field": "cohort_name",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "countries",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "available_data_types__biospecimens",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "available_data_types__environmental_data",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "available_data_types__genomic_data",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "available_data_types__phenotypic_clinical_data",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "basic_cohort_attributes",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "biosample__biosample_variables",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "biosample__sample_types",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "cohort_autocomplete",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "current_enrollment",
+          "show": true,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "laboratory_measures__genomic_variables",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "laboratory_measures__microbiology",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "pi_lead",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__lifestyle_and_behaviours",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__physiological_measurements",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__socio_demographic_and_economic_characteristics",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "website",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        }
+      ]
+    },
+    "columns-state": {
+      "state": {
+        "type": "cohort",
+        "keyField": "id",
+        "defaultSorted": [
+          {
+            "id": "cohort_name",
+            "desc": false
+          }
+        ],
+        "columns": [
+          {
+            "canChangeShow": true,
+            "field": "available_data_types.biospecimens",
+            "query": null,
+            "show": false,
+            "accessor": "available_data_types.biospecimens",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "boolean"
+          },
+          {
+            "canChangeShow": true,
+            "field": "available_data_types.environmental_data",
+            "query": null,
+            "show": false,
+            "accessor": "available_data_types.environmental_data",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "boolean"
+          },
+          {
+            "canChangeShow": true,
+            "field": "available_data_types.genomic_data",
+            "query": null,
+            "show": false,
+            "accessor": "available_data_types.genomic_data",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "boolean"
+          },
+          {
+            "canChangeShow": true,
+            "field": "available_data_types.phenotypic_clinical_data",
+            "query": null,
+            "show": false,
+            "accessor": "available_data_types.phenotypic_clinical_data",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "boolean"
+          },
+          {
+            "canChangeShow": true,
+            "field": "basic_cohort_attributes",
+            "query": null,
+            "show": false,
+            "accessor": "basic_cohort_attributes",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "biosample.biosample_variables",
+            "query": null,
+            "show": false,
+            "accessor": "biosample.biosample_variables",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "biosample.sample_types",
+            "query": null,
+            "show": false,
+            "accessor": "biosample.sample_types",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "cohort_autocomplete",
+            "query": null,
+            "show": false,
+            "accessor": "cohort_autocomplete",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "cohort_name",
+            "query": null,
+            "show": false,
+            "accessor": "cohort_name",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "countries",
+            "query": null,
+            "show": false,
+            "accessor": "countries",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "current_enrollment",
+            "query": null,
+            "show": false,
+            "accessor": "current_enrollment",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "number"
+          },
+          {
+            "canChangeShow": true,
+            "field": "laboratory_measures.genomic_variables",
+            "query": null,
+            "show": false,
+            "accessor": "laboratory_measures.genomic_variables",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "laboratory_measures.microbiology",
+            "query": null,
+            "show": false,
+            "accessor": "laboratory_measures.microbiology",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "pi_lead",
+            "query": null,
+            "show": false,
+            "accessor": "pi_lead",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.lifestyle_and_behaviours",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.lifestyle_and_behaviours",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.physiological_measurements",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.physiological_measurements",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.socio_demographic_and_economic_characteristics",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.socio_demographic_and_economic_characteristics",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "website",
+            "query": null,
+            "show": false,
+            "accessor": "website",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          }
+        ]
+      },
+      "timestamp": "2020-05-04T13:07:38.395Z"
+    },
+    "matchbox-state": {
+      "state": [
+        {
+          "keyField": null,
+          "field": "",
+          "displayName": "cohort",
+          "searchFields": [],
+          "isActive": false
+        }
+      ],
+      "timestamp": "2020-05-04T13:07:38.396Z"
+    },
+    "extended": [
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "available_data_types",
+        "displayName": "Available Data Types",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "object",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "available_data_types.biospecimens",
+        "displayName": "Biospecimens",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "available_data_types.environmental_data",
+        "displayName": "Environmental Data",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "available_data_types.genomic_data",
+        "displayName": "Genomic Data",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "available_data_types.phenotypic_clinical_data",
+        "displayName": "Phenotypic Clinical Data",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "basic_cohort_attributes",
+        "displayName": "Basic Cohort Attributes",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "biosample",
+        "displayName": "Biosample",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "object",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "biosample.biosample_variables",
+        "displayName": "Biosample Variables",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "biosample.sample_types",
+        "displayName": "Sample Types",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "cohort_autocomplete",
+        "displayName": "Cohort Autocomplete",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "cohort_name",
+        "displayName": "Cohort Name",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": true
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "countries",
+        "displayName": "Countries",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "current_enrollment",
+        "displayName": "Current Enrollment",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "integer",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "laboratory_measures",
+        "displayName": "Laboratory Measures",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "object",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "laboratory_measures.genomic_variables",
+        "displayName": "Genomic Variables",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "laboratory_measures.microbiology",
+        "displayName": "Microbiology",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "pi_lead",
+        "displayName": "Pi Lead",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data",
+        "displayName": "Questionnaire Survey Data",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "object",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.lifestyle_and_behaviours",
+        "displayName": "Lifestyle And Behaviours",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.physiological_measurements",
+        "displayName": "Physiological Measurements",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.socio_demographic_and_economic_characteristics",
+        "displayName": "Socio Demographic And Economic Characteristics",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "website",
+        "displayName": "Website",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      }
+    ]
+  }
+}
