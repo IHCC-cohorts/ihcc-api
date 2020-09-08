@@ -6,5 +6,5 @@ export const ARRANGER_PROJECT_ID = String(
   process.env.ARRANGER_PROJECT_ID || "ihcc"
 );
 export const ARRANGER_COHORT_CENTRIC_INDEX = String(
-  process.env.ARRANGER_COHORT_CENTRIC_INDEX
+  process.env.ARRANGER_COHORT_CENTRIC_INDEX || "demo_index"
 );
