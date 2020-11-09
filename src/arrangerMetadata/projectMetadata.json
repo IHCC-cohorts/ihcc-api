@@ -98,6 +98,30 @@
           "type": "Aggregations"
         },
         {
+          "field": "questionnaire_survey_data__diseases",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__medication",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__non_pharmacological_interventions",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__healthcare_information",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "questionnaire_survey_data__physiological_measurements",
           "show": true,
           "active": true,
@@ -310,6 +334,50 @@
             "query": null,
             "show": false,
             "accessor": "questionnaire_survey_data.socio_demographic_and_economic_characteristics",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.diseases",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.diseases",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.medication",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.medication",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.non_pharmacological_interventions",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.non_pharmacological_interventions",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string"
+          },
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.healthcare_information",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.healthcare_information",
             "jsonPath": null,
             "sortable": true,
             "id": null,
@@ -589,6 +657,54 @@
         "quickSearchEnabled": false,
         "field": "questionnaire_survey_data.socio_demographic_and_economic_characteristics",
         "displayName": "Socio Demographic And Economic Characteristics",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.diseases",
+        "displayName": "Diseases",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.medication",
+        "displayName": "Medication",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.non_pharmacological_interventions",
+        "displayName": "Non-pharmacological Interventions",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.healthcare_information",
+        "displayName": "Healthcare Information",
         "active": false,
         "isArray": true,
         "rangeStep": 1,
