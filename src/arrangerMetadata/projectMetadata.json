@@ -98,18 +98,6 @@
           "type": "Aggregations"
         },
         {
-          "field": "questionnaire_survey_data__physiological_measurements",
-          "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
-          "field": "questionnaire_survey_data__socio_demographic_and_economic_characteristics",
-          "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
           "field": "questionnaire_survey_data__diseases",
           "show": true,
           "active": true,
@@ -129,6 +117,18 @@
         },
         {
           "field": "questionnaire_survey_data__healthcare_information",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__physiological_measurements",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__socio_demographic_and_economic_characteristics",
           "show": true,
           "active": true,
           "type": "Aggregations"
