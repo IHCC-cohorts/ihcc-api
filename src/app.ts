@@ -1,11 +1,11 @@
 import express from "express";
 import morgan from "morgan";
 
-//@ts-ignore
-import { PORT, ES_HOSTS, ARRANGER_PROJECT_ID } from "config";
 import { Client } from "@elastic/elasticsearch";
-import getArrangerGqlSchema, { ArrangerGqlContext } from "getArrangerSchema";
 import { ApolloServer } from "apollo-server-express";
+
+import { PORT, ES_HOSTS, ARRANGER_PROJECT_ID } from "./config";
+import getArrangerGqlSchema, { ArrangerGqlContext } from "./getArrangerSchema";
 
 (async () => {
   const esClient = new Client({
