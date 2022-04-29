@@ -20,12 +20,6 @@
           "type": "Aggregations"
         },
         {
-          "field": "available_data_types__biospecimens",
-          "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
           "field": "available_data_types__genomic_data",
           "show": true,
           "active": true,
@@ -51,6 +45,12 @@
         },
         {
           "field": "available_data_types__genomic_data_other",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "available_data_types__biospecimens",
           "show": true,
           "active": true,
           "type": "Aggregations"
@@ -86,12 +86,6 @@
           "type": "Aggregations"
         },
         {
-          "field": "irb_approved_data_sharing",
-          "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
           "field": "basic_cohort_attributes",
           "show": false,
           "active": true,
@@ -105,7 +99,7 @@
         },
         {
           "field": "biosample__sample_types",
-          "show": false,
+          "show": true,
           "active": true,
           "type": "Aggregations"
         },
@@ -122,6 +116,30 @@
           "type": "NumericAggregations"
         },
         {
+          "field": "enrollment_period",
+          "show": false,
+          "active": true,
+          "type": "NumericAggregations"
+        },
+        {
+          "field": "dictionary_harmonized",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "irb_approved_data_sharing",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "pi_lead",
+          "show": false,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "laboratory_measures__genomic_variables",
           "show": false,
           "active": true,
@@ -130,7 +148,7 @@
         {
           "field": "laboratory_measures__microbiology",
           "show": false,
-          "active": false,
+          "active": true,
           "type": "Aggregations"
         },
         {
@@ -164,6 +182,18 @@
           "type": "Aggregations"
         },
         {
+          "field": "questionnaire_survey_data__perception_of_health_and_quality_of_life",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__physical_environment",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
           "field": "questionnaire_survey_data__physiological_measurements",
           "show": true,
           "active": true,
@@ -171,6 +201,48 @@
         },
         {
           "field": "questionnaire_survey_data__socio_demographic_and_economic_characteristics",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__survey_administration",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "questionnaire_survey_data__other_questionnaire_survey_data",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "type_of_cohort__case_control",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "type_of_cohort__cross_sectional",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "type_of_cohort__health_records",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "type_of_cohort__longitudinal",
+          "show": true,
+          "active": true,
+          "type": "Aggregations"
+        },
+        {
+          "field": "type_of_cohort__other",
           "show": true,
           "active": true,
           "type": "Aggregations"
@@ -208,42 +280,6 @@
         {
           "field": "cohort_ancestry__other",
           "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
-          "field": "type_of_cohort__case_control",
-          "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
-          "field": "type_of_cohort__cross_sectional",
-          "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
-          "field": "type_of_cohort__health_records",
-          "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
-          "field": "type_of_cohort__longitudinal",
-          "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
-          "field": "type_of_cohort__other",
-          "show": true,
-          "active": true,
-          "type": "Aggregations"
-        },
-        {
-          "field": "pi_lead",
-          "show": false,
           "active": true,
           "type": "Aggregations"
         },
@@ -303,8 +339,19 @@
             "canChangeShow": true,
             "field": "target_enrollment",
             "query": null,
-            "show": false,
+            "show": true,
             "accessor": "target_enrollment",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "enrollment"
+          },
+          {
+            "canChangeShow": true,
+            "field": "enrollment_period",
+            "query": null,
+            "show": false,
+            "accessor": "enrollment_period",
             "jsonPath": null,
             "sortable": true,
             "id": null,
@@ -543,6 +590,28 @@
           },
           {
             "canChangeShow": true,
+            "field": "questionnaire_survey_data.perception_of_health_and_quality_of_life",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.perception_of_health_and_quality_of_life",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string_array"
+          },
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.physical_environment",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.physical_environment",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string_array"
+          },
+          {
+            "canChangeShow": true,
             "field": "questionnaire_survey_data.physiological_measurements",
             "query": null,
             "show": false,
@@ -563,7 +632,28 @@
             "id": null,
             "type": "string_array"
           },
-
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.survey_administration",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.survey_administration",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string_array"
+          },
+          {
+            "canChangeShow": true,
+            "field": "questionnaire_survey_data.other_questionnaire_survey_data",
+            "query": null,
+            "show": false,
+            "accessor": "questionnaire_survey_data.other_questionnaire_survey_data",
+            "jsonPath": null,
+            "sortable": true,
+            "id": null,
+            "type": "string_array"
+          },
           {
             "canChangeShow": true,
             "field": "type_of_cohort.case_control",
@@ -623,7 +713,7 @@
             "canChangeShow": true,
             "field": "cohort_ancestry.asian",
             "query": null,
-            "show": false,
+            "show": true,
             "accessor": "cohort_ancestry.asian",
             "jsonPath": null,
             "sortable": true,
@@ -634,7 +724,7 @@
             "canChangeShow": true,
             "field": "cohort_ancestry.black_african_american_or_african",
             "query": null,
-            "show": false,
+            "show": true,
             "accessor": "cohort_ancestry.black_african_american_or_african",
             "jsonPath": null,
             "sortable": true,
@@ -645,7 +735,7 @@
             "canChangeShow": true,
             "field": "cohort_ancestry.european_or_white",
             "query": null,
-            "show": false,
+            "show": true,
             "accessor": "cohort_ancestry.european_or_white",
             "jsonPath": null,
             "sortable": true,
@@ -656,7 +746,7 @@
             "canChangeShow": true,
             "field": "cohort_ancestry.hispanic_latino_or_spanish",
             "query": null,
-            "show": false,
+            "show": true,
             "accessor": "cohort_ancestry.hispanic_latino_or_spanish",
             "jsonPath": null,
             "sortable": true,
@@ -667,7 +757,7 @@
             "canChangeShow": true,
             "field": "cohort_ancestry.middle_eastern_or_north_african",
             "query": null,
-            "show": false,
+            "show": true,
             "accessor": "cohort_ancestry.middle_eastern_or_north_african",
             "jsonPath": null,
             "sortable": true,
@@ -678,7 +768,7 @@
             "canChangeShow": true,
             "field": "cohort_ancestry.other",
             "query": null,
-            "show": false,
+            "show": true,
             "accessor": "cohort_ancestry.other",
             "jsonPath": null,
             "sortable": true,
@@ -981,12 +1071,36 @@
         "unit": null,
         "displayValues": {},
         "quickSearchEnabled": false,
+        "field": "enrollment_period",
+        "displayName": "Enrollment Period",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
         "field": "irb_approved_data_sharing",
         "displayName": "Data Sharing Potential",
         "active": false,
         "isArray": false,
         "rangeStep": 1,
         "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "dictionary_harmonized",
+        "displayName": "Dictionary Harmonized",
+        "active": false,
+        "isArray": false,
+        "rangeStep": 1,
+        "type": "boolean",
         "primaryKey": false
       },
       {
@@ -1053,8 +1167,80 @@
         "unit": null,
         "displayValues": {},
         "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.diseases",
+        "displayName": "Diseases",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.healthcare_information",
+        "displayName": "Healthcare Information",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
         "field": "questionnaire_survey_data.lifestyle_and_behaviours",
         "displayName": "Lifestyle And Behaviours",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.medication",
+        "displayName": "Medication",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.non_pharmacological_interventions",
+        "displayName": "Non-Pharmacological Interventions",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.perception_of_health_and_quality_of_life",
+        "displayName": "Perception of Health and Quality of Life",
+        "active": false,
+        "isArray": true,
+        "rangeStep": 1,
+        "type": "keyword",
+        "primaryKey": false
+      },
+      {
+        "unit": null,
+        "displayValues": {},
+        "quickSearchEnabled": false,
+        "field": "questionnaire_survey_data.physical_environment",
+        "displayName": "Physical Environment",
         "active": false,
         "isArray": true,
         "rangeStep": 1,
@@ -1089,8 +1275,8 @@
         "unit": null,
         "displayValues": {},
         "quickSearchEnabled": false,
-        "field": "questionnaire_survey_data.diseases",
-        "displayName": "Diseases",
+        "field": "questionnaire_survey_data.survey_administration",
+        "displayName": "Survey Administration",
         "active": false,
         "isArray": true,
         "rangeStep": 1,
@@ -1101,32 +1287,8 @@
         "unit": null,
         "displayValues": {},
         "quickSearchEnabled": false,
-        "field": "questionnaire_survey_data.medication",
-        "displayName": "Medication",
-        "active": false,
-        "isArray": true,
-        "rangeStep": 1,
-        "type": "keyword",
-        "primaryKey": false
-      },
-      {
-        "unit": null,
-        "displayValues": {},
-        "quickSearchEnabled": false,
-        "field": "questionnaire_survey_data.non_pharmacological_interventions",
-        "displayName": "Non-pharmacological Interventions",
-        "active": false,
-        "isArray": true,
-        "rangeStep": 1,
-        "type": "keyword",
-        "primaryKey": false
-      },
-      {
-        "unit": null,
-        "displayValues": {},
-        "quickSearchEnabled": false,
-        "field": "questionnaire_survey_data.healthcare_information",
-        "displayName": "Healthcare Information",
+        "field": "questionnaire_survey_data.other_questionnaire_survey_data",
+        "displayName": "Other Survery Data",
         "active": false,
         "isArray": true,
         "rangeStep": 1,
