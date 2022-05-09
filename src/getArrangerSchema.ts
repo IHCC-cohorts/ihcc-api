@@ -24,8 +24,8 @@ import { createProjectSchema } from "@arranger/server/dist/startProject";
 
 import { GraphQLSchema } from "graphql";
 import { transformSchema, TransformRootFields } from "graphql-tools";
-import { ARRANGER_PROJECT_ID } from "config";
 import { Client } from "@elastic/elasticsearch";
+import { ARRANGER_PROJECT_ID } from "./config";
 import initArrangerMetadata from "./initArrangerProject";
 
 export type ArrangerGqlContext = {
