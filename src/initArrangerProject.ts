@@ -1,9 +1,9 @@
 import { Client } from "@elastic/elasticsearch";
 import isEqual from "lodash/isEqual";
 import retry from "async-retry";
-import { ARRANGER_PROJECT_ID, ARRANGER_COHORT_CENTRIC_INDEX } from "config";
-import projectMetadata from "arrangerMetadata/projectMetadata.json";
-import projectManifest from "arrangerMetadata/arrangerProject.json";
+import projectMetadata from "./arrangerMetadata/projectMetadata.json";
+import projectManifest from "./arrangerMetadata/arrangerProject.json";
+import { ARRANGER_PROJECT_ID, ARRANGER_COHORT_CENTRIC_INDEX } from "./config";
 
 export const ARRANGER_PROJECT_METADATA_INDEX = `arranger-projects-${ARRANGER_PROJECT_ID}`;
 export const ARRANGER_PROJECTS_INDEX = `arranger-projects`;
