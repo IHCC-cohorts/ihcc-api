@@ -663,7 +663,7 @@
             "jsonPath": null,
             "sortable": true,
             "id": null,
-            "type": "boolean"
+            "type": "string"
           },
           {
             "canChangeShow": true,
@@ -674,7 +674,7 @@
             "jsonPath": null,
             "sortable": true,
             "id": null,
-            "type": "boolean"
+            "type": "string"
           },
           {
             "canChangeShow": true,
@@ -685,7 +685,7 @@
             "jsonPath": null,
             "sortable": true,
             "id": null,
-            "type": "boolean"
+            "type": "string"
           },
           {
             "canChangeShow": true,
@@ -696,7 +696,7 @@
             "jsonPath": null,
             "sortable": true,
             "id": null,
-            "type": "boolean"
+            "type": "string"
           },
           {
             "canChangeShow": true,
@@ -707,7 +707,7 @@
             "jsonPath": null,
             "sortable": true,
             "id": null,
-            "type": "boolean"
+            "type": "string"
           },
           {
             "canChangeShow": true,
@@ -773,7 +773,7 @@
             "jsonPath": null,
             "sortable": true,
             "id": null,
-            "type": "boolean"
+            "type": "percent_range"
           },
           {
             "canChangeShow": true,
@@ -1364,7 +1364,7 @@
         "active": false,
         "isArray": false,
         "rangeStep": 1,
-        "type": "boolean",
+        "type": "keyword",
         "primaryKey": false
       },
       {
@@ -1376,7 +1376,7 @@
         "active": false,
         "isArray": false,
         "rangeStep": 1,
-        "type": "boolean",
+        "type": "keyword",
         "primaryKey": false
       },
       {
@@ -1388,7 +1388,7 @@
         "active": false,
         "isArray": false,
         "rangeStep": 1,
-        "type": "boolean",
+        "type": "keyword",
         "primaryKey": false
       },
       {
@@ -1400,7 +1400,7 @@
         "active": false,
         "isArray": false,
         "rangeStep": 1,
-        "type": "boolean",
+        "type": "keyword",
         "primaryKey": false
       },
       {
@@ -1412,7 +1412,7 @@
         "active": false,
         "isArray": false,
         "rangeStep": 1,
-        "type": "boolean",
+        "type": "keyword",
         "primaryKey": false
       },
       {
@@ -1424,7 +1424,7 @@
         "active": false,
         "isArray": false,
         "rangeStep": 1,
-        "type": "boolean",
+        "type": "keyword",
         "primaryKey": false
       },
       {
