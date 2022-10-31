@@ -1288,7 +1288,7 @@
         "displayValues": {},
         "quickSearchEnabled": false,
         "field": "questionnaire_survey_data.other_questionnaire_survey_data",
-        "displayName": "Other Survery Data",
+        "displayName": "Other Survey Data",
         "active": false,
         "isArray": true,
         "rangeStep": 1,
