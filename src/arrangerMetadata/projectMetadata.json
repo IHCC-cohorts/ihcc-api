@@ -443,7 +443,7 @@
             "jsonPath": null,
             "sortable": true,
             "id": null,
-            "type": "boolean"
+            "type": "percent_range"
           },
           {
             "canChangeShow": true,
@@ -907,7 +907,7 @@
         "active": true,
         "isArray": false,
         "rangeStep": 1,
-        "type": "boolean",
+        "type": "keyword",
         "primaryKey": false
       },
       {
